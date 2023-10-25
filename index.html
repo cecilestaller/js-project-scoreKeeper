@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Score Keeper</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <section class="score">
+            <fieldset>
+                <legend>HOME</legend>
+                <div>
+                    <h2 id="homeScore">0</h2>
+                </div>
+            </fieldset>
+        </section>
+        <section class="score">
+            <fieldset>
+                <legend>AWAY</legend>
+                <div>
+                    <h2 id="awayScore">0</h2>
+                </div>
+            </fieldset>
+        </section>
+        <section class="scoreButtons">
+            <button onclick="homeScoreChange(1)">+1</button>
+            <button onclick="homeScoreChange(2)">+2</button>
+            <button onclick="homeScoreChange(3)">+3</button>
+        </section>
+        <section class="scoreButtons">
+            <button onclick="awayScoreChange(1)">+1</button>
+            <button onclick="awayScoreChange(2)">+2</button>
+            <button onclick="awayScoreChange(3)">+3</button>
+        </section>
+    </main>
+    <footer>
+        <button id="reset" onclick="resetButton()">Reset</button>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
