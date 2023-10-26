@@ -10,7 +10,7 @@
     <main>
         <section class="score">
             <fieldset>
-                <legend>HOME</legend>
+                <legend id="home-team">HOME</legend>
                 <div>
                     <h2 id="homeScore">0</h2>
                 </div>
@@ -18,7 +18,7 @@
         </section>
         <section class="score">
             <fieldset>
-                <legend>AWAY</legend>
+                <legend id="away-team">AWAY</legend>
                 <div>
                     <h2 id="awayScore">0</h2>
                 </div>
@@ -37,6 +37,7 @@
     </main>
     <footer>
         <button id="reset" onclick="resetButton()">Reset</button>
+        <button onclick="setTeams()">Vergeben Teamnamen</button>
     </footer>
     <script src="./assets/js/main.js"></script>
 </body>
